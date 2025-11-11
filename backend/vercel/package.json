@@ -1,0 +1,10 @@
+{
+  "name": "promptpolish-vercel",
+  "version": "1.0.0",
+  "description": "Vercel backend for PromptPolish",
+  "main": "api/improve.js",
+  "scripts": {
+    "deploy": "vercel --prod"
+  },
+  "license": "MIT"
+}

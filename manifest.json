@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "PromptPolish",
+  "version": "1.0.0",
+  "description": "Automatically improve your prompts with AI assistance",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://perplexity.ai/*"
+  ],
+  "optional_host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://perplexity.ai/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PromptPolish Settings"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://perplexity.ai/*"
+      ],
+      "js": ["promptImprover.js", "diff.js", "content.js"],
+      "css": ["ui.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "polish-prompt": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Polish the current prompt"
+    }
+  }
+}

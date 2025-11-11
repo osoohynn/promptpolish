@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptPolish - 개인정보처리방침</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #1a1a1a;
+    }
+    ul {
+      margin: 10px 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    .contact {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+    .last-updated {
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 40px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>PromptPolish 개인정보처리방침</h1>
+
+  <p><strong>PromptPolish</strong>는 사용자의 개인정보 보호를 최우선으로 생각합니다. 본 개인정보처리방침은 확장 프로그램이 어떤 데이터를 수집하고 사용하는지 설명합니다.</p>
+
+  <h2>1. 수집하는 데이터</h2>
+  <p>PromptPolish는 다음과 같은 데이터만 수집합니다:</p>
+  <ul>
+    <li><strong>사용자 입력 텍스트</strong>: 프롬프트 개선을 위해 사용자가 입력한 텍스트만 처리합니다.</li>
+    <li><strong>AI 플랫폼 선택 정보</strong>: 사용자가 선택한 AI 플랫폼(ChatGPT, Claude, Gemini, Perplexity) 정보는 브라우저 로컬 저장소에만 저장됩니다.</li>
+  </ul>
+  <p><strong>수집하지 않는 정보:</strong></p>
+  <ul>
+    <li>개인 식별 정보 (이름, 이메일, 전화번호 등)</li>
+    <li>웹 브라우징 기록</li>
+    <li>위치 정보</li>
+    <li>인증 정보 (비밀번호, API 키 등)</li>
+  </ul>
+
+  <h2>2. 데이터 사용 방식</h2>
+  <p>수집된 데이터는 다음 목적으로만 사용됩니다:</p>
+  <ul>
+    <li><strong>프롬프트 개선</strong>: 사용자가 입력한 텍스트를 OpenAI API를 통해 더 명확하고 구조화된 프롬프트로 개선합니다.</li>
+    <li><strong>설정 저장</strong>: 사용자가 선택한 AI 플랫폼 정보를 로컬 저장소에 보관하여 다음 사용 시 자동으로 적용합니다.</li>
+  </ul>
+
+  <h2>3. 제3자 공유</h2>
+  <p>PromptPolish는 프롬프트 개선을 위해 다음 제3자 서비스를 사용합니다:</p>
+  <ul>
+    <li>
+      <strong>OpenAI API</strong>: 사용자가 프롬프트 개선을 요청할 때, 입력한 텍스트가 OpenAI의 GPT-4o-mini 모델로 전송됩니다.
+      <br>OpenAI 개인정보처리방침: <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a>
+    </li>
+    <li>
+      <strong>Cloudflare Workers</strong>: 백엔드 서버로 사용되며, OpenAI API 요청을 중계합니다. 사용자 데이터를 저장하지 않습니다.
+      <br>Cloudflare 개인정보처리방침: <a href="https://www.cloudflare.com/privacypolicy" target="_blank">https://www.cloudflare.com/privacypolicy</a>
+    </li>
+  </ul>
+  <p><strong>중요:</strong> PromptPolish는 사용자 데이터를 판매하거나, 광고 목적으로 사용하거나, 제3자에게 제공하지 않습니다. 데이터는 프롬프트 개선 목적으로만 전송되며, 서버에 저장되지 않습니다.</p>
+
+  <h2>4. 데이터 보관</h2>
+  <ul>
+    <li><strong>로컬 저장소</strong>: AI 플랫폼 선택 정보만 브라우저 로컬 저장소(chrome.storage.local)에 저장됩니다. 이 데이터는 사용자 기기에만 존재하며 외부로 전송되지 않습니다.</li>
+    <li><strong>서버 저장</strong>: PromptPolish 백엔드는 사용자 입력 텍스트나 개선된 프롬프트를 저장하지 않습니다. 모든 데이터는 요청 처리 즉시 삭제됩니다.</li>
+  </ul>
+
+  <h2>5. 데이터 보안</h2>
+  <ul>
+    <li>모든 데이터 전송은 HTTPS를 통해 암호화됩니다.</li>
+    <li>OpenAI API 키는 사용자에게 노출되지 않으며, 백엔드 서버(Cloudflare Workers)에서만 관리됩니다.</li>
+    <li>사용자는 언제든지 확장 프로그램을 삭제하여 로컬 저장소 데이터를 제거할 수 있습니다.</li>
+  </ul>
+
+  <h2>6. 사용자 권리</h2>
+  <p>사용자는 다음과 같은 권리를 가집니다:</p>
+  <ul>
+    <li><strong>데이터 삭제</strong>: 확장 프로그램을 삭제하면 로컬 저장소의 모든 데이터가 자동으로 삭제됩니다.</li>
+    <li><strong>서비스 중단</strong>: 언제든지 확장 프로그램 사용을 중단할 수 있습니다.</li>
+  </ul>
+
+  <h2>7. 아동 개인정보 보호</h2>
+  <p>PromptPolish는 만 13세 미만 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
+
+  <h2>8. 개인정보처리방침 변경</h2>
+  <p>본 개인정보처리방침은 필요에 따라 업데이트될 수 있습니다. 중요한 변경 사항이 있을 경우 확장 프로그램을 통해 공지합니다.</p>
+
+  <div class="contact">
+    <h2>9. 문의</h2>
+    <p>개인정보 보호와 관련하여 질문이나 우려 사항이 있으시면 다음으로 연락 주시기 바랍니다:</p>
+    <p><strong>이메일</strong>: [your-email@example.com]</p>
+    <p><strong>GitHub</strong>: <a href="https://github.com/yourusername/promptpolish" target="_blank">https://github.com/yourusername/promptpolish</a></p>
+  </div>
+
+  <p class="last-updated"><strong>최종 업데이트</strong>: 2025년 1월 11일</p>
+
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+  <h1>PromptPolish Privacy Policy</h1>
+
+  <p><strong>PromptPolish</strong> prioritizes user privacy. This Privacy Policy explains what data the extension collects and how it is used.</p>
+
+  <h2>1. Data We Collect</h2>
+  <p>PromptPolish only collects the following data:</p>
+  <ul>
+    <li><strong>User Input Text</strong>: Only the text you enter to improve your prompts is processed.</li>
+    <li><strong>AI Platform Selection</strong>: Your selected AI platform (ChatGPT, Claude, Gemini, Perplexity) is stored in your browser's local storage only.</li>
+  </ul>
+  <p><strong>We do NOT collect:</strong></p>
+  <ul>
+    <li>Personal identifiable information (name, email, phone number, etc.)</li>
+    <li>Web browsing history</li>
+    <li>Location data</li>
+    <li>Authentication credentials (passwords, API keys, etc.)</li>
+  </ul>
+
+  <h2>2. How We Use Your Data</h2>
+  <p>Collected data is only used for:</p>
+  <ul>
+    <li><strong>Prompt Improvement</strong>: Your input text is sent to OpenAI API to generate clearer and more structured prompts.</li>
+    <li><strong>Settings Storage</strong>: Your AI platform preference is saved locally for future use.</li>
+  </ul>
+
+  <h2>3. Third-Party Sharing</h2>
+  <p>PromptPolish uses the following third-party services for prompt improvement:</p>
+  <ul>
+    <li>
+      <strong>OpenAI API</strong>: When you request prompt improvement, your input text is sent to OpenAI's GPT-4o-mini model.
+      <br>OpenAI Privacy Policy: <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a>
+    </li>
+    <li>
+      <strong>Cloudflare Workers</strong>: Used as our backend server to relay API requests. No user data is stored.
+      <br>Cloudflare Privacy Policy: <a href="https://www.cloudflare.com/privacypolicy" target="_blank">https://www.cloudflare.com/privacypolicy</a>
+    </li>
+  </ul>
+  <p><strong>Important:</strong> PromptPolish does NOT sell user data, use it for advertising, or share it with third parties. Data is only transmitted for prompt improvement and is not stored on our servers.</p>
+
+  <h2>4. Data Storage</h2>
+  <ul>
+    <li><strong>Local Storage</strong>: Only AI platform selection is stored in your browser's local storage (chrome.storage.local). This data remains on your device and is never transmitted externally.</li>
+    <li><strong>Server Storage</strong>: PromptPolish backend does NOT store user input text or improved prompts. All data is deleted immediately after processing.</li>
+  </ul>
+
+  <h2>5. Data Security</h2>
+  <ul>
+    <li>All data transmission is encrypted via HTTPS.</li>
+    <li>OpenAI API keys are never exposed to users and are only managed on our backend server (Cloudflare Workers).</li>
+    <li>You can delete all local storage data at any time by uninstalling the extension.</li>
+  </ul>
+
+  <h2>6. Your Rights</h2>
+  <p>You have the following rights:</p>
+  <ul>
+    <li><strong>Data Deletion</strong>: Uninstalling the extension automatically deletes all local storage data.</li>
+    <li><strong>Service Termination</strong>: You can stop using the extension at any time.</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>PromptPolish does not knowingly collect personal information from children under 13 years of age.</p>
+
+  <h2>8. Privacy Policy Changes</h2>
+  <p>This Privacy Policy may be updated as needed. Significant changes will be announced through the extension.</p>
+
+  <div class="contact">
+    <h2>9. Contact</h2>
+    <p>If you have questions or concerns about privacy, please contact us:</p>
+    <p><strong>Email</strong>: [your-email@example.com]</p>
+    <p><strong>GitHub</strong>: <a href="https://github.com/yourusername/promptpolish" target="_blank">https://github.com/yourusername/promptpolish</a></p>
+  </div>
+
+  <p class="last-updated"><strong>Last Updated</strong>: January 11, 2025</p>
+</body>
+</html>
