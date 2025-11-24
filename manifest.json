@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
   "name": "PromptPolish",
-  "version": "1.0.0",
-  "description": "Automatically improve your prompts with AI assistance",
+  "version": "2.0.0",
+  "description": "효과적인 프롬프트 작성을 위한 템플릿 제공 - 7가지 작성 방법론 통합",
   "permissions": [
     "storage",
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
   "host_permissions": [
     "https://chat.openai.com/*",
@@ -39,7 +38,7 @@
         "https://gemini.google.com/*",
         "https://perplexity.ai/*"
       ],
-      "js": ["promptImprover.js", "diff.js", "content.js"],
+      "js": ["promptImprover.js", "content.js"],
       "css": ["ui.css"],
       "run_at": "document_idle"
     }
@@ -49,7 +48,7 @@
       "suggested_key": {
         "default": "Alt+P"
       },
-      "description": "Polish the current prompt"
+      "description": "Open prompt template"
     }
   }
 }

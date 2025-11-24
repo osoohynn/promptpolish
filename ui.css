@@ -38,7 +38,8 @@
   outline-offset: 1px;
 }
 
-.pp-polish-btn {
+.pp-polish-btn,
+.pp-template-btn {
   padding: 6px 12px;
   background: #1a1a1a;
   color: white;
@@ -50,12 +51,14 @@
   transition: all 0.2s;
 }
 
-.pp-polish-btn:hover {
+.pp-polish-btn:hover,
+.pp-template-btn:hover {
   background: #000;
   transform: translateY(-1px);
 }
 
-.pp-polish-btn:active {
+.pp-polish-btn:active,
+.pp-template-btn:active {
   transform: translateY(0);
 }
 
@@ -83,7 +86,8 @@
 }
 
 .pp-modal-large {
-  max-width: 900px;
+  max-width: 1200px;
+  width: 95%;
   max-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -199,7 +203,8 @@
 }
 
 .pp-original-textarea,
-.pp-improved-textarea {
+.pp-improved-textarea,
+.pp-template-textarea {
   width: 100%;
   padding: 12px;
   border: 2px solid #d0d0d0;
@@ -220,8 +225,14 @@
   border-color: #999;
 }
 
+.pp-template-textarea {
+  background: white;
+  border-color: #999;
+}
+
 .pp-original-textarea:focus,
-.pp-improved-textarea:focus {
+.pp-improved-textarea:focus,
+.pp-template-textarea:focus {
   outline: none;
   border-color: #333;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
